@@ -6,29 +6,14 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
+#pragma mark - Import frameworks
 #import "HBAHTTPClient.h"
-
-// Import AFNetworking
 #import <AFNetworking/AFHTTPSessionManager.h>
 
-
+#pragma mark - Class implementing
 @implementation HBAHTTPClient
 
-// Create singleton class to control HTTPClient
-+ (instancetype)sharedInstance
-{
-    // Create singleton static variable to share
-    static id _singleton = nil;
-    static dispatch_once_t predicate;
-    
-    // Keep instance variable be create just one
-    dispatch_once(&predicate, ^{
-        _singleton = [[self alloc] init];
-    });
-    
-    // Return instance variable
-    return _singleton;
-}
+#pragma mark Implement public methods
 
 // Create API to get image
 - (UIImage *)getImageByUrlString:(NSString *)urlString

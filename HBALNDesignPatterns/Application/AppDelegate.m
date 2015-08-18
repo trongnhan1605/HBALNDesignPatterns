@@ -6,19 +6,23 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
+#pragma mark - Import frameworks
 #import "AppDelegate.h"
 #import "HBALNHomeViewController.h"
 
+#pragma mark - Private interface
 @interface AppDelegate ()
 
 @end
 
+#pragma mark - Class implementing
 @implementation AppDelegate
 
+#pragma mark Implement UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
     
+    // Override point for customization after application launch.
     // Set frame for window
     [self.window setFrame:[[UIScreen mainScreen] bounds]];
     

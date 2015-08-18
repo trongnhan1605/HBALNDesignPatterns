@@ -6,8 +6,10 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
+#pragma mark - Import frameworks
 #import <UIKit/UIKit.h>
 
+#pragma mark - Public interface
 @interface HBAHTTPClient : NSObject
 
 //- (instancetype)getRequestWithUrl:(NSString *)url;
@@ -15,8 +17,5 @@
 
 // Create API to get image
 - (UIImage *)getImageByUrlString:(NSString *)urlString;
-
-// Create singleton class to control HTTPClient
-+ (instancetype)sharedInstance;
 
 @end

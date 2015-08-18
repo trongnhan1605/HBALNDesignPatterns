@@ -6,8 +6,10 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
+#pragma mark - Import frameworks
 #import "AlbumView.h"
 
+#pragma mark - Private interface
 @interface AlbumView ()
 
 // Cover image to show in view
@@ -18,6 +20,7 @@
 
 @end
 
+#pragma mark - Class implementing
 @implementation AlbumView
 
 - (instancetype)initWithFrame:(CGRect)frame albumCover:(NSString *)cover

@@ -6,14 +6,18 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
+#pragma mark - Import frameworks
 #import "HBAPersistencyManager.h"
 
+#pragma mark - Private interface
 @interface HBAPersistencyManager ()
 
+// Create array of album
 @property (strong, nonatomic) NSMutableArray *albums;
 
 @end
 
+#pragma mark - Class implementing
 @implementation HBAPersistencyManager
 
 // Override init method
@@ -39,8 +43,7 @@
     return self;
 }
 
-#pragma mark - Public functions
-
+#pragma mark Implement public methods
 
 // Get all albums
 - (NSArray *)getAlbums

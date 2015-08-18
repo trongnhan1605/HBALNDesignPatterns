@@ -6,12 +6,15 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
+#pragma mark - Import frameworks
 #import "HBALNHomeViewController.h"
 
+#pragma mark - Private interface
 @interface HBALNHomeViewController ()
 
 @end
 
+#pragma mark - Class implementing
 @implementation HBALNHomeViewController
 
 - (void)viewDidLoad {

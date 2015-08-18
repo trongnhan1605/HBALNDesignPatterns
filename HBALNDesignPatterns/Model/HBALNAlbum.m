@@ -6,9 +6,13 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
+#pragma mark - Import frameworks
 #import "HBALNAlbum.h"
 
+#pragma mark - Class implementing
 @implementation HBALNAlbum
+
+#pragma mark Implement public methods
 
 // Init Album
 - (HBALNAlbum *)initWithTitle:(NSString *)title artist:(NSString *)artist coverUrlString:(NSString *)coverUrlString year:(NSString *)year

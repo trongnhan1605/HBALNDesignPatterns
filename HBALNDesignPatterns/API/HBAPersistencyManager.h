@@ -6,9 +6,11 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
+#pragma mark - Import frameworks
 #import <Foundation/Foundation.h>
 #import "HBALNAlbum.h"
 
+#pragma mark - Public interface
 @interface HBAPersistencyManager : NSObject
 
 // Get all albums

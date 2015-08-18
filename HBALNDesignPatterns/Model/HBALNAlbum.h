@@ -6,8 +6,10 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
+#pragma mark - Import frameworks
 #import <Foundation/Foundation.h>
 
+#pragma mark - Public interface
 @interface HBALNAlbum : NSObject
 
 @property (copy, nonatomic) NSString *title;
