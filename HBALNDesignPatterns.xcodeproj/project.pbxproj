@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6626C07C1B82D8D900194571 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6626C07B1B82D8D900194571 /* main.m */; };
-		6626C07F1B82D8D900194571 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6626C07E1B82D8D900194571 /* AppDelegate.m */; };
-		6626C0821B82D8D900194571 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6626C0811B82D8D900194571 /* ViewController.m */; };
-		6626C0851B82D8D900194571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6626C0831B82D8D900194571 /* Main.storyboard */; };
-		6626C0871B82D8D900194571 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6626C0861B82D8D900194571 /* Images.xcassets */; };
-		6626C08A1B82D8D900194571 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6626C0881B82D8D900194571 /* LaunchScreen.xib */; };
+		24AE355EAB0AD9E6C9E65726 /* libPods-HBALNDesignPatterns.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDA10E6DD6BEBFDFDD1828E /* libPods-HBALNDesignPatterns.a */; };
 		6626C0961B82D8D900194571 /* HBALNDesignPatternsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6626C0951B82D8D900194571 /* HBALNDesignPatternsTests.m */; };
+		668CFF551B82E017007EA2B7 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF541B82E017007EA2B7 /* HTTPClient.m */; };
+		668CFF591B82E73E007EA2B7 /* HBALNAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF581B82E73E007EA2B7 /* HBALNAlbum.m */; };
+		668CFF5E1B82E9F8007EA2B7 /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF5D1B82E9F8007EA2B7 /* AlbumView.m */; };
+		668CFF6A1B82EE88007EA2B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF611B82EE88007EA2B7 /* AppDelegate.m */; };
+		668CFF6D1B82EE88007EA2B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668CFF671B82EE88007EA2B7 /* Images.xcassets */; };
+		668CFF6F1B82EE88007EA2B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF691B82EE88007EA2B7 /* main.m */; };
+		668CFF781B82FE50007EA2B7 /* HBALNHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF771B82FE50007EA2B7 /* HBALNHomeViewController.m */; };
+		668CFF7B1B8308AB007EA2B7 /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF7A1B8308AB007EA2B7 /* PersistencyManager.m */; };
+		668CFF7E1B830BF4007EA2B7 /* HBALNPhotoURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 668CFF7D1B830BF4007EA2B7 /* HBALNPhotoURL.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +31,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1614B8D0C849690BFF70E7FC /* Pods-HBALNDesignPatterns.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBALNDesignPatterns.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBALNDesignPatterns/Pods-HBALNDesignPatterns.debug.xcconfig"; sourceTree = "<group>"; };
+		1DD04F8F1ABE429F567BCC08 /* Pods-HBALNDesignPatterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBALNDesignPatterns.release.xcconfig"; path = "Pods/Target Support Files/Pods-HBALNDesignPatterns/Pods-HBALNDesignPatterns.release.xcconfig"; sourceTree = "<group>"; };
 		6626C0761B82D8D900194571 /* HBALNDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBALNDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6626C07A1B82D8D900194571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6626C07B1B82D8D900194571 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6626C07D1B82D8D900194571 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6626C07E1B82D8D900194571 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6626C0801B82D8D900194571 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6626C0811B82D8D900194571 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6626C0841B82D8D900194571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6626C0861B82D8D900194571 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6626C0891B82D8D900194571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6626C08F1B82D8D900194571 /* HBALNDesignPatternsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HBALNDesignPatternsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6626C0941B82D8D900194571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6626C0951B82D8D900194571 /* HBALNDesignPatternsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBALNDesignPatternsTests.m; sourceTree = "<group>"; };
+		668CFF531B82E017007EA2B7 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		668CFF541B82E017007EA2B7 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		668CFF571B82E73E007EA2B7 /* HBALNAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBALNAlbum.h; sourceTree = "<group>"; };
+		668CFF581B82E73E007EA2B7 /* HBALNAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBALNAlbum.m; sourceTree = "<group>"; };
+		668CFF5C1B82E9F8007EA2B7 /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
+		668CFF5D1B82E9F8007EA2B7 /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
+		668CFF601B82EE88007EA2B7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		668CFF611B82EE88007EA2B7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		668CFF641B82EE88007EA2B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		668CFF661B82EE88007EA2B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		668CFF671B82EE88007EA2B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		668CFF681B82EE88007EA2B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		668CFF691B82EE88007EA2B7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		668CFF761B82FE50007EA2B7 /* HBALNHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBALNHomeViewController.h; sourceTree = "<group>"; };
+		668CFF771B82FE50007EA2B7 /* HBALNHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBALNHomeViewController.m; sourceTree = "<group>"; };
+		668CFF791B8308AB007EA2B7 /* PersistencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistencyManager.h; sourceTree = "<group>"; };
+		668CFF7A1B8308AB007EA2B7 /* PersistencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistencyManager.m; sourceTree = "<group>"; };
+		668CFF7D1B830BF4007EA2B7 /* HBALNPhotoURL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HBALNPhotoURL.plist; sourceTree = "<group>"; };
+		7EDA10E6DD6BEBFDFDD1828E /* libPods-HBALNDesignPatterns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HBALNDesignPatterns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24AE355EAB0AD9E6C9E65726 /* libPods-HBALNDesignPatterns.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +83,8 @@
 				6626C0781B82D8D900194571 /* HBALNDesignPatterns */,
 				6626C0921B82D8D900194571 /* HBALNDesignPatternsTests */,
 				6626C0771B82D8D900194571 /* Products */,
+				B3F214C5FE0532C51645BFDA /* Pods */,
+				B608B94C0F9C7E18AFEFAA50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,25 +100,13 @@
 		6626C0781B82D8D900194571 /* HBALNDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				6626C07D1B82D8D900194571 /* AppDelegate.h */,
-				6626C07E1B82D8D900194571 /* AppDelegate.m */,
-				6626C0801B82D8D900194571 /* ViewController.h */,
-				6626C0811B82D8D900194571 /* ViewController.m */,
-				6626C0831B82D8D900194571 /* Main.storyboard */,
-				6626C0861B82D8D900194571 /* Images.xcassets */,
-				6626C0881B82D8D900194571 /* LaunchScreen.xib */,
-				6626C0791B82D8D900194571 /* Supporting Files */,
+				668CFF5F1B82EE49007EA2B7 /* Application */,
+				668CFF5B1B82E9D3007EA2B7 /* Controller */,
+				668CFF5A1B82E9C6007EA2B7 /* View */,
+				668CFF561B82E6BA007EA2B7 /* Model */,
+				668CFF521B82DFC9007EA2B7 /* API */,
 			);
 			path = HBALNDesignPatterns;
-			sourceTree = "<group>";
-		};
-		6626C0791B82D8D900194571 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6626C07A1B82D8D900194571 /* Info.plist */,
-				6626C07B1B82D8D900194571 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6626C0921B82D8D900194571 /* HBALNDesignPatternsTests */ = {
@@ -119,6 +126,100 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		668CFF521B82DFC9007EA2B7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				668CFF531B82E017007EA2B7 /* HTTPClient.h */,
+				668CFF541B82E017007EA2B7 /* HTTPClient.m */,
+				668CFF791B8308AB007EA2B7 /* PersistencyManager.h */,
+				668CFF7A1B8308AB007EA2B7 /* PersistencyManager.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		668CFF561B82E6BA007EA2B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				668CFF571B82E73E007EA2B7 /* HBALNAlbum.h */,
+				668CFF581B82E73E007EA2B7 /* HBALNAlbum.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		668CFF5A1B82E9C6007EA2B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				668CFF5C1B82E9F8007EA2B7 /* AlbumView.h */,
+				668CFF5D1B82E9F8007EA2B7 /* AlbumView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		668CFF5B1B82E9D3007EA2B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				668CFF751B82F0E7007EA2B7 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		668CFF5F1B82EE49007EA2B7 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				668CFF7C1B830BE8007EA2B7 /* Data */,
+				668CFF601B82EE88007EA2B7 /* AppDelegate.h */,
+				668CFF611B82EE88007EA2B7 /* AppDelegate.m */,
+				668CFF621B82EE88007EA2B7 /* Base.lproj */,
+				668CFF671B82EE88007EA2B7 /* Images.xcassets */,
+				668CFF681B82EE88007EA2B7 /* Info.plist */,
+				668CFF691B82EE88007EA2B7 /* main.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		668CFF621B82EE88007EA2B7 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				668CFF631B82EE88007EA2B7 /* LaunchScreen.xib */,
+				668CFF651B82EE88007EA2B7 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		668CFF751B82F0E7007EA2B7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				668CFF761B82FE50007EA2B7 /* HBALNHomeViewController.h */,
+				668CFF771B82FE50007EA2B7 /* HBALNHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		668CFF7C1B830BE8007EA2B7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				668CFF7D1B830BF4007EA2B7 /* HBALNPhotoURL.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B3F214C5FE0532C51645BFDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1614B8D0C849690BFF70E7FC /* Pods-HBALNDesignPatterns.debug.xcconfig */,
+				1DD04F8F1ABE429F567BCC08 /* Pods-HBALNDesignPatterns.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B608B94C0F9C7E18AFEFAA50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EDA10E6DD6BEBFDFDD1828E /* libPods-HBALNDesignPatterns.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6626C0991B82D8D900194571 /* Build configuration list for PBXNativeTarget "HBALNDesignPatterns" */;
 			buildPhases = (
+				6A5A03E2166BD63436A3683B /* Check Pods Manifest.lock */,
 				6626C0721B82D8D900194571 /* Sources */,
 				6626C0731B82D8D900194571 /* Frameworks */,
 				6626C0741B82D8D900194571 /* Resources */,
+				E180F4B5703A2743C1CCA012 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,9 +302,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6626C0851B82D8D900194571 /* Main.storyboard in Resources */,
-				6626C08A1B82D8D900194571 /* LaunchScreen.xib in Resources */,
-				6626C0871B82D8D900194571 /* Images.xcassets in Resources */,
+				668CFF6D1B82EE88007EA2B7 /* Images.xcassets in Resources */,
+				668CFF7E1B830BF4007EA2B7 /* HBALNPhotoURL.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,14 +316,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A5A03E2166BD63436A3683B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E180F4B5703A2743C1CCA012 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HBALNDesignPatterns/Pods-HBALNDesignPatterns-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6626C0721B82D8D900194571 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6626C0821B82D8D900194571 /* ViewController.m in Sources */,
-				6626C07F1B82D8D900194571 /* AppDelegate.m in Sources */,
-				6626C07C1B82D8D900194571 /* main.m in Sources */,
+				668CFF6F1B82EE88007EA2B7 /* main.m in Sources */,
+				668CFF781B82FE50007EA2B7 /* HBALNHomeViewController.m in Sources */,
+				668CFF6A1B82EE88007EA2B7 /* AppDelegate.m in Sources */,
+				668CFF5E1B82E9F8007EA2B7 /* AlbumView.m in Sources */,
+				668CFF551B82E017007EA2B7 /* HTTPClient.m in Sources */,
+				668CFF591B82E73E007EA2B7 /* HBALNAlbum.m in Sources */,
+				668CFF7B1B8308AB007EA2B7 /* PersistencyManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,20 +383,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6626C0831B82D8D900194571 /* Main.storyboard */ = {
+		668CFF631B82EE88007EA2B7 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6626C0841B82D8D900194571 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6626C0881B82D8D900194571 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6626C0891B82D8D900194571 /* Base */,
+				668CFF641B82EE88007EA2B7 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		668CFF651B82EE88007EA2B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				668CFF661B82EE88007EA2B7 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -280,7 +419,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anh Nguyen Ba Nhi (FRYG6JJ264)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Anh Nguyen Ba Nhi (FRYG6JJ264)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -324,6 +464,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Anh Nguyen Ba Nhi (FRYG6JJ264)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -347,9 +488,10 @@
 		};
 		6626C09A1B82D8D900194571 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1614B8D0C849690BFF70E7FC /* Pods-HBALNDesignPatterns.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = HBALNDesignPatterns/Info.plist;
+				INFOPLIST_FILE = HBALNDesignPatterns/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -357,9 +499,10 @@
 		};
 		6626C09B1B82D8D900194571 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DD04F8F1ABE429F567BCC08 /* Pods-HBALNDesignPatterns.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = HBALNDesignPatterns/Info.plist;
+				INFOPLIST_FILE = HBALNDesignPatterns/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -418,6 +561,7 @@
 				6626C09B1B82D8D900194571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6626C09C1B82D8D900194571 /* Build configuration list for PBXNativeTarget "HBALNDesignPatternsTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +570,7 @@
 				6626C09E1B82D8D900194571 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

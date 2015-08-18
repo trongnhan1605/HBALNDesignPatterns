@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HBALNHomeViewController.h"
 
-@interface ViewController ()
+@interface HBALNHomeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation HBALNHomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

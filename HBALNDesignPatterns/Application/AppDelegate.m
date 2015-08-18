@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HBALNHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    // Set frame for window
+    [self.window setFrame:[[UIScreen mainScreen] bounds]];
+    
+    // Set rootview for window
+    HBALNHomeViewController *homeViewController = [[HBALNHomeViewController alloc] init];
+    self.window.rootViewController = homeViewController;
+    
+    // Make the root view show on window
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
