@@ -15,6 +15,18 @@
 
 #pragma mark Implement public methods
 
+// TODO
+- (instancetype)getRequestWithUrlString:(NSString *)url
+{
+    return nil;
+}
+
+// TODO
+- (instancetype)postRequestWithUrlString:(NSString *)url andBodyString:(NSString *)body
+{
+    return nil;
+}
+
 // Create API to get image
 - (UIImage *)getImageByUrlString:(NSString *)urlString
 {

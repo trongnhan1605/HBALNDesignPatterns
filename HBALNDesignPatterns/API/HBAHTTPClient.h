@@ -12,8 +12,8 @@
 #pragma mark - Public interface
 @interface HBAHTTPClient : NSObject
 
-//- (instancetype)getRequestWithUrl:(NSString *)url;
-//- (instancetype)postRequestWithUrl:(NSString *)url andBodyString:(NSString *)body;
+- (instancetype)getRequestWithUrlString:(NSString *)url;
+- (instancetype)postRequestWithUrlString:(NSString *)url andBodyString:(NSString *)body;
 
 // Create API to get image
 - (UIImage *)getImageByUrlString:(NSString *)urlString;
