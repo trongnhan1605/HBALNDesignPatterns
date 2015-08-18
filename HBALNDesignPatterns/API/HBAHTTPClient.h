@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HTTPClient : NSObject
+@interface HBAHTTPClient : NSObject
 
 //- (instancetype)getRequestWithUrl:(NSString *)url;
 //- (instancetype)postRequestWithUrl:(NSString *)url andBodyString:(NSString *)body;

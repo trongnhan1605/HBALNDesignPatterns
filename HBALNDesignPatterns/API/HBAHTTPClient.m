@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
-#import "HTTPClient.h"
+#import "HBAHTTPClient.h"
 
 // Import AFNetworking
 #import <AFNetworking/AFHTTPSessionManager.h>
 
 
-@implementation HTTPClient
+@implementation HBAHTTPClient
 
 // Create singleton class to control HTTPClient
 + (instancetype)sharedInstance

@@ -6,15 +6,15 @@
 //  Copyright (c) 2015 HCMUS. All rights reserved.
 //
 
-#import "PersistencyManager.h"
+#import "HBAPersistencyManager.h"
 
-@interface PersistencyManager ()
+@interface HBAPersistencyManager ()
 
 @property (strong, nonatomic) NSMutableArray *albums;
 
 @end
 
-@implementation PersistencyManager
+@implementation HBAPersistencyManager
 
 // Override init method
 - (instancetype)init

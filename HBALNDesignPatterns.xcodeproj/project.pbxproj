@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		24AE355EAB0AD9E6C9E65726 /* libPods-HBALNDesignPatterns.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDA10E6DD6BEBFDFDD1828E /* libPods-HBALNDesignPatterns.a */; };
 		6626C0961B82D8D900194571 /* HBALNDesignPatternsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6626C0951B82D8D900194571 /* HBALNDesignPatternsTests.m */; };
-		668CFF551B82E017007EA2B7 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF541B82E017007EA2B7 /* HTTPClient.m */; };
+		668CFF551B82E017007EA2B7 /* HBAHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF541B82E017007EA2B7 /* HBAHTTPClient.m */; };
 		668CFF591B82E73E007EA2B7 /* HBALNAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF581B82E73E007EA2B7 /* HBALNAlbum.m */; };
 		668CFF5E1B82E9F8007EA2B7 /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF5D1B82E9F8007EA2B7 /* AlbumView.m */; };
 		668CFF6A1B82EE88007EA2B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF611B82EE88007EA2B7 /* AppDelegate.m */; };
 		668CFF6D1B82EE88007EA2B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668CFF671B82EE88007EA2B7 /* Images.xcassets */; };
 		668CFF6F1B82EE88007EA2B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF691B82EE88007EA2B7 /* main.m */; };
 		668CFF781B82FE50007EA2B7 /* HBALNHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF771B82FE50007EA2B7 /* HBALNHomeViewController.m */; };
-		668CFF7B1B8308AB007EA2B7 /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF7A1B8308AB007EA2B7 /* PersistencyManager.m */; };
+		668CFF7B1B8308AB007EA2B7 /* HBAPersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF7A1B8308AB007EA2B7 /* HBAPersistencyManager.m */; };
 		668CFF7E1B830BF4007EA2B7 /* HBALNPhotoURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 668CFF7D1B830BF4007EA2B7 /* HBALNPhotoURL.plist */; };
+		668CFF821B831CEA007EA2B7 /* HBALibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF811B831CEA007EA2B7 /* HBALibraryAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +38,8 @@
 		6626C08F1B82D8D900194571 /* HBALNDesignPatternsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HBALNDesignPatternsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6626C0941B82D8D900194571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6626C0951B82D8D900194571 /* HBALNDesignPatternsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBALNDesignPatternsTests.m; sourceTree = "<group>"; };
-		668CFF531B82E017007EA2B7 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
-		668CFF541B82E017007EA2B7 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		668CFF531B82E017007EA2B7 /* HBAHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAHTTPClient.h; sourceTree = "<group>"; };
+		668CFF541B82E017007EA2B7 /* HBAHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAHTTPClient.m; sourceTree = "<group>"; };
 		668CFF571B82E73E007EA2B7 /* HBALNAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBALNAlbum.h; sourceTree = "<group>"; };
 		668CFF581B82E73E007EA2B7 /* HBALNAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBALNAlbum.m; sourceTree = "<group>"; };
 		668CFF5C1B82E9F8007EA2B7 /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
@@ -52,9 +53,11 @@
 		668CFF691B82EE88007EA2B7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		668CFF761B82FE50007EA2B7 /* HBALNHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBALNHomeViewController.h; sourceTree = "<group>"; };
 		668CFF771B82FE50007EA2B7 /* HBALNHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBALNHomeViewController.m; sourceTree = "<group>"; };
-		668CFF791B8308AB007EA2B7 /* PersistencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistencyManager.h; sourceTree = "<group>"; };
-		668CFF7A1B8308AB007EA2B7 /* PersistencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistencyManager.m; sourceTree = "<group>"; };
+		668CFF791B8308AB007EA2B7 /* HBAPersistencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBAPersistencyManager.h; sourceTree = "<group>"; };
+		668CFF7A1B8308AB007EA2B7 /* HBAPersistencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAPersistencyManager.m; sourceTree = "<group>"; };
 		668CFF7D1B830BF4007EA2B7 /* HBALNPhotoURL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HBALNPhotoURL.plist; sourceTree = "<group>"; };
+		668CFF801B831CEA007EA2B7 /* HBALibraryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBALibraryAPI.h; sourceTree = "<group>"; };
+		668CFF811B831CEA007EA2B7 /* HBALibraryAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBALibraryAPI.m; sourceTree = "<group>"; };
 		7EDA10E6DD6BEBFDFDD1828E /* libPods-HBALNDesignPatterns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HBALNDesignPatterns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,10 +132,11 @@
 		668CFF521B82DFC9007EA2B7 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				668CFF531B82E017007EA2B7 /* HTTPClient.h */,
-				668CFF541B82E017007EA2B7 /* HTTPClient.m */,
-				668CFF791B8308AB007EA2B7 /* PersistencyManager.h */,
-				668CFF7A1B8308AB007EA2B7 /* PersistencyManager.m */,
+				668CFF7F1B831CD4007EA2B7 /* HBALibraryAPI */,
+				668CFF531B82E017007EA2B7 /* HBAHTTPClient.h */,
+				668CFF541B82E017007EA2B7 /* HBAHTTPClient.m */,
+				668CFF791B8308AB007EA2B7 /* HBAPersistencyManager.h */,
+				668CFF7A1B8308AB007EA2B7 /* HBAPersistencyManager.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -201,6 +205,15 @@
 				668CFF7D1B830BF4007EA2B7 /* HBALNPhotoURL.plist */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		668CFF7F1B831CD4007EA2B7 /* HBALibraryAPI */ = {
+			isa = PBXGroup;
+			children = (
+				668CFF801B831CEA007EA2B7 /* HBALibraryAPI.h */,
+				668CFF811B831CEA007EA2B7 /* HBALibraryAPI.m */,
+			);
+			path = HBALibraryAPI;
 			sourceTree = "<group>";
 		};
 		B3F214C5FE0532C51645BFDA /* Pods */ = {
@@ -358,9 +371,10 @@
 				668CFF781B82FE50007EA2B7 /* HBALNHomeViewController.m in Sources */,
 				668CFF6A1B82EE88007EA2B7 /* AppDelegate.m in Sources */,
 				668CFF5E1B82E9F8007EA2B7 /* AlbumView.m in Sources */,
-				668CFF551B82E017007EA2B7 /* HTTPClient.m in Sources */,
+				668CFF821B831CEA007EA2B7 /* HBALibraryAPI.m in Sources */,
+				668CFF551B82E017007EA2B7 /* HBAHTTPClient.m in Sources */,
 				668CFF591B82E73E007EA2B7 /* HBALNAlbum.m in Sources */,
-				668CFF7B1B8308AB007EA2B7 /* PersistencyManager.m in Sources */,
+				668CFF7B1B8308AB007EA2B7 /* HBAPersistencyManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "HBALNAlbum.h"
 
-@interface PersistencyManager : NSObject
+@interface HBAPersistencyManager : NSObject
 
 // Get all albums
 - (NSArray *)getAlbums;
