@@ -1,5 +1,5 @@
 //
-//  AlbumView.h
+//  HBALNAlbumView.h
 //  HBALNDesignPatterns
 //
 //  Created by PhucNT13 on 8/18/15.
@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 #pragma mark - Public interface
-@interface AlbumView : UIView
+@interface HBALNAlbumView : UIView
 
 // Init AlbumView with frame and cover info
 - (instancetype)initWithFrame:(CGRect)frame albumCover:(NSString *)cover;

@@ -1,5 +1,5 @@
 //
-//  Album.h
+//  HBALNAlbum.h
 //  HBALNDesignPatterns
 //
 //  Created by PhucNT13 on 8/18/15.

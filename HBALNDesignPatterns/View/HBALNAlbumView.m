@@ -1,5 +1,5 @@
 //
-//  AlbumView.m
+//  HBALNAlbumView.
 //  HBALNDesignPatterns
 //
 //  Created by PhucNT13 on 8/18/15.
@@ -7,10 +7,10 @@
 //
 
 #pragma mark - Import frameworks
-#import "AlbumView.h"
+#import "HBALNAlbumView.h"
 
 #pragma mark - Private interface
-@interface AlbumView ()
+@interface HBALNAlbumView ()
 
 // Cover image to show in view
 @property (copy, nonatomic) UIImageView *coverImage;
@@ -21,7 +21,7 @@
 @end
 
 #pragma mark - Class implementing
-@implementation AlbumView
+@implementation HBALNAlbumView
 
 - (instancetype)initWithFrame:(CGRect)frame albumCover:(NSString *)cover
 {
