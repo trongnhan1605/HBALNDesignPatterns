@@ -24,11 +24,11 @@
     
     // Override point for customization after application launch.
     // Set frame for window
-    [self.window setFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Set rootview for window
-    HBALNHomeViewController *homeViewController = [[HBALNHomeViewController alloc] init];
-    self.window.rootViewController = homeViewController;
+    self.rootViewController = [[HBALNHomeViewController alloc] init];
+    self.window.rootViewController = self.rootViewController;
     
     // Make the root view show on window
     [self.window makeKeyAndVisible];
