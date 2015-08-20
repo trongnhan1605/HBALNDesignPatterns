@@ -12,8 +12,11 @@
 #import "HBALibraryAPI.h"
 #import "HBALNAlbum+HBALNTableRepresentation.h"
 
+#import "HBALNHorizontalScroller.h"
+#import "HBALNAlbumView.h"
+
 #pragma mark - Private interface
-@interface HBALNHomeViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface HBALNHomeViewController () <UITableViewDataSource, UITableViewDelegate, HBALNHorizontalScrollerDelegate>
 
 // Create table view to present data
 @property (strong, nonatomic) UITableView *tableData;
@@ -25,7 +28,10 @@
 @property (strong, nonatomic) NSDictionary *currentAlbumData;
 
 // Create index to hold current index of data
-@property (nonatomic) NSUInteger indexAlbumData;
+@property (nonatomic) NSInteger indexAlbumData;
+
+// Create index to hold current index of data
+@property (strong, nonatomic) HBALNHorizontalScroller *scroller;
 
 @end
 
@@ -34,6 +40,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
     [self configDataWhenControllerBecomeLoad];
 }
@@ -43,6 +50,12 @@
 // Config controller when view become load
 - (void)configDataWhenControllerBecomeLoad
 {
+    // Config scroll view
+    self.scroller = [[HBALNHorizontalScroller alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 120)];
+    self.scroller.backgroundColor = [UIColor colorWithRed:0.24f green:0.35f blue:0.49f alpha:1];
+    self.scroller.delegate = self;
+    [self.view addSubview:self.scroller];
+    
     // Config background view
     self.view.backgroundColor = [UIColor colorWithRed:135.0 green:211.0 blue:124.0 alpha:1];
     
@@ -57,6 +70,9 @@
     
     // Show current view after load
     [self showDataForAlbumAtIndex:self.indexAlbumData];
+    
+    // Refresh scroll view controller after load data
+    [self reloadScroller];
 }
 
 // Config table view
@@ -74,6 +90,23 @@
     // Register header cell for table view
     
     // Register footer cell for table view
+}
+
+
+// Reload scroller
+- (void)reloadScroller
+{
+    self.albums = [[HBALibraryAPI sharedInstance] getAlbums];
+    
+    if (self.indexAlbumData < 0) {
+        self.indexAlbumData = 0;
+    }
+    else if (self.indexAlbumData >= self.albums.count) {
+        self.indexAlbumData = self.albums.count - 1;
+    }
+    
+    [self.scroller reload];
+    [self showDataForAlbumAtIndex:self.indexAlbumData];
 }
 
 //  Update infor for current AlbumData
@@ -124,6 +157,32 @@
     
     // Return cell
     return tableViewCell;
+}
+
+// TODO Check it later
+#pragma mark HorizontalScrollerDelegate implementing
+- (void)horizontalScroller:(HBALNHorizontalScroller *)scroller clickedAtIndex:(NSInteger)index
+{
+    // Update current index when item is changed
+    self.indexAlbumData = index;
+    
+    // Show data at current index
+    [self showDataForAlbumAtIndex:self.indexAlbumData];
+}
+
+- (NSInteger)numberOfViewsForHorizontalScroller:(HBALNHorizontalScroller *)scroller
+{
+    return self.albums.count;
+}
+
+- (UIView *)horizontalScroller:(HBALNHorizontalScroller *)scroller viewAtIndex:(NSInteger)index
+{
+    // Create a view for scroller
+    HBALNAlbum *album = self.albums[index];
+    HBALNAlbumView *albumView = [[HBALNAlbumView alloc] initWithFrame:CGRectMake(0, 0, 100, 100) albumCover:album.coverUrl];
+    
+    // Return view for scroller
+    return albumView;
 }
 
 @end
