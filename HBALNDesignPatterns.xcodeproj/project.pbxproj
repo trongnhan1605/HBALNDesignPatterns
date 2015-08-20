@@ -11,7 +11,7 @@
 		6626C0961B82D8D900194571 /* HBALNDesignPatternsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6626C0951B82D8D900194571 /* HBALNDesignPatternsTests.m */; };
 		668CFF551B82E017007EA2B7 /* HBAHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF541B82E017007EA2B7 /* HBAHTTPClient.m */; };
 		668CFF591B82E73E007EA2B7 /* HBALNAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF581B82E73E007EA2B7 /* HBALNAlbum.m */; };
-		668CFF5E1B82E9F8007EA2B7 /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF5D1B82E9F8007EA2B7 /* AlbumView.m */; };
+		668CFF5E1B82E9F8007EA2B7 /* HBALNAlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF5D1B82E9F8007EA2B7 /* HBALNAlbumView.m */; };
 		668CFF6A1B82EE88007EA2B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF611B82EE88007EA2B7 /* AppDelegate.m */; };
 		668CFF6D1B82EE88007EA2B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668CFF671B82EE88007EA2B7 /* Images.xcassets */; };
 		668CFF6F1B82EE88007EA2B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF691B82EE88007EA2B7 /* main.m */; };
@@ -19,6 +19,7 @@
 		668CFF7B1B8308AB007EA2B7 /* HBAPersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF7A1B8308AB007EA2B7 /* HBAPersistencyManager.m */; };
 		668CFF7E1B830BF4007EA2B7 /* HBALNPhotoURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 668CFF7D1B830BF4007EA2B7 /* HBALNPhotoURL.plist */; };
 		668CFF821B831CEA007EA2B7 /* HBALibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 668CFF811B831CEA007EA2B7 /* HBALibraryAPI.m */; };
+		66DDD3481B841C1C00C8AAE1 /* HBALNAlbum+HBALNTableRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DDD3471B841C1C00C8AAE1 /* HBALNAlbum+HBALNTableRepresentation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +43,8 @@
 		668CFF541B82E017007EA2B7 /* HBAHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBAHTTPClient.m; sourceTree = "<group>"; };
 		668CFF571B82E73E007EA2B7 /* HBALNAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBALNAlbum.h; sourceTree = "<group>"; };
 		668CFF581B82E73E007EA2B7 /* HBALNAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBALNAlbum.m; sourceTree = "<group>"; };
-		668CFF5C1B82E9F8007EA2B7 /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
-		668CFF5D1B82E9F8007EA2B7 /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
+		668CFF5C1B82E9F8007EA2B7 /* HBALNAlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBALNAlbumView.h; sourceTree = "<group>"; };
+		668CFF5D1B82E9F8007EA2B7 /* HBALNAlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBALNAlbumView.m; sourceTree = "<group>"; };
 		668CFF601B82EE88007EA2B7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		668CFF611B82EE88007EA2B7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		668CFF641B82EE88007EA2B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -57,6 +58,8 @@
 		668CFF7D1B830BF4007EA2B7 /* HBALNPhotoURL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HBALNPhotoURL.plist; sourceTree = "<group>"; };
 		668CFF801B831CEA007EA2B7 /* HBALibraryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBALibraryAPI.h; sourceTree = "<group>"; };
 		668CFF811B831CEA007EA2B7 /* HBALibraryAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBALibraryAPI.m; sourceTree = "<group>"; };
+		66DDD3461B841C1C00C8AAE1 /* HBALNAlbum+HBALNTableRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HBALNAlbum+HBALNTableRepresentation.h"; sourceTree = "<group>"; };
+		66DDD3471B841C1C00C8AAE1 /* HBALNAlbum+HBALNTableRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HBALNAlbum+HBALNTableRepresentation.m"; sourceTree = "<group>"; };
 		7EDA10E6DD6BEBFDFDD1828E /* libPods-HBALNDesignPatterns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HBALNDesignPatterns.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,6 +105,7 @@
 		6626C0781B82D8D900194571 /* HBALNDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				66DDD3451B841B7B00C8AAE1 /* Manager */,
 				668CFF5F1B82EE49007EA2B7 /* Application */,
 				668CFF5B1B82E9D3007EA2B7 /* Controller */,
 				668CFF5A1B82E9C6007EA2B7 /* View */,
@@ -152,8 +156,8 @@
 		668CFF5A1B82E9C6007EA2B7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				668CFF5C1B82E9F8007EA2B7 /* AlbumView.h */,
-				668CFF5D1B82E9F8007EA2B7 /* AlbumView.m */,
+				668CFF5C1B82E9F8007EA2B7 /* HBALNAlbumView.h */,
+				668CFF5D1B82E9F8007EA2B7 /* HBALNAlbumView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,6 +216,15 @@
 				668CFF811B831CEA007EA2B7 /* HBALibraryAPI.m */,
 			);
 			path = HBALibraryAPI;
+			sourceTree = "<group>";
+		};
+		66DDD3451B841B7B00C8AAE1 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				66DDD3461B841C1C00C8AAE1 /* HBALNAlbum+HBALNTableRepresentation.h */,
+				66DDD3471B841C1C00C8AAE1 /* HBALNAlbum+HBALNTableRepresentation.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		B3F214C5FE0532C51645BFDA /* Pods */ = {
@@ -366,9 +379,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				668CFF6F1B82EE88007EA2B7 /* main.m in Sources */,
+				66DDD3481B841C1C00C8AAE1 /* HBALNAlbum+HBALNTableRepresentation.m in Sources */,
 				668CFF781B82FE50007EA2B7 /* HBALNHomeViewController.m in Sources */,
 				668CFF6A1B82EE88007EA2B7 /* AppDelegate.m in Sources */,
-				668CFF5E1B82E9F8007EA2B7 /* AlbumView.m in Sources */,
+				668CFF5E1B82E9F8007EA2B7 /* HBALNAlbumView.m in Sources */,
 				668CFF821B831CEA007EA2B7 /* HBALibraryAPI.m in Sources */,
 				668CFF551B82E017007EA2B7 /* HBAHTTPClient.m in Sources */,
 				668CFF591B82E73E007EA2B7 /* HBALNAlbum.m in Sources */,
