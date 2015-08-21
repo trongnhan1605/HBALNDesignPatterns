@@ -40,10 +40,30 @@
         _indicator.center = self.center;
         [_indicator startAnimating];
         [self addSubview:_indicator];
+        
+        // Post notification to load image data
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"HBADownloadImageNotification" object:self userInfo:@{@"imageView":self.coverImage, @"coverUrl":cover}];
+		
+		// Add observer for cover Image
+		[self.coverImage addObserver:self forKeyPath:@"image" options:0 context:nil];
     }
     
     // Return value
     return self;
+}
+
+// Remove observer when view locating
+- (void)dealloc
+{
+	[self.coverImage removeObserver:self forKeyPath:@"image"];
+}
+
+// Implement KVO for image
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+	if ([keyPath isEqualToString:@"image"]) {
+		[self.indicator stopAnimating];
+	}
 }
 
 /*

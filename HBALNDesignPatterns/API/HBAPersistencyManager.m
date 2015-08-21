@@ -98,4 +98,31 @@
     return YES;
 }
 
+
+// TODO Save image to local
+- (BOOL)saveImage:(UIImage *)image withName:(NSString *)fileName
+{
+    // Create save path from current fileName
+    fileName = [NSHomeDirectory() stringByAppendingFormat:@"/Documents/%@", fileName];
+    
+    // Write image data to local
+    NSData *data = UIImagePNGRepresentation(image);
+    BOOL isWriteSuccess = [data writeToFile:fileName atomically:YES];
+    
+    return isWriteSuccess;
+}
+
+// Get image from local
+- (UIImage *)getImageWithName:(NSString *)imageName
+{
+    // Get local directory that save these files
+    imageName = [NSHomeDirectory() stringByAppendingFormat:@"/Documents/%@", imageName];
+    
+    // Load image file from local
+    UIImage *localImage = [UIImage imageWithData:[NSData dataWithContentsOfFile:imageName] ];
+    
+    // Return resutl file
+    return localImage;
+}
+
 @end

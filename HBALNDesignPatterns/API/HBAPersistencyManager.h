@@ -7,7 +7,7 @@
 //
 
 #pragma mark - Import frameworks
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "HBALNAlbum.h"
 
 #pragma mark - Public interface
@@ -24,5 +24,11 @@
 
 // Delete album at index
 - (BOOL)deleteAlbumAtIndex:(NSUInteger)index;
+
+// Save image to local
+- (BOOL)saveImage:(UIImage *)image withName:(NSString *)fileName;
+
+// Get image from local
+- (UIImage *)getImageWithName:(NSString *)imageName;
 
 @end

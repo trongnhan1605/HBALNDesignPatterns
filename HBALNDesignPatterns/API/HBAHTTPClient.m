@@ -33,16 +33,16 @@
     //Create Image for getting
     UIImage *image;
     
-    //TODO Convert UrlString to URL
+    //Convert UrlString to URL
     NSURL *imageUrl = [NSURL URLWithString:urlString];
     
-    //TODO Download image by URL
+    //Download image by URL
     NSData *data = [NSData dataWithContentsOfURL:imageUrl];
     
-    //TODO Return Image (format: Image)
+    //Return Image (format: Image)
     image = [UIImage imageWithData:data];
     
-    //TODO Return Image
+    //Return Image
     return image;
 }
 

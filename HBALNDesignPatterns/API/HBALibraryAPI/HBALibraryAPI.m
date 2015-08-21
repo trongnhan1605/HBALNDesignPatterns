@@ -39,10 +39,19 @@
         _persistencyManager = [[HBAPersistencyManager alloc] init];
         _httpClient = [[HBAHTTPClient alloc] init];
         _isOnline = NO;
+        
+        // Add observer to update image data
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadImage:) name:@"HBADownloadImageNotification" object:nil];
     }
     
     // Return value
     return self;
+}
+
+// Remove observer when class was delocating
+- (void)dealloc
+{
+	[[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark Implement public methods
@@ -109,5 +118,34 @@
     return isdeleleted;
 }
 
+#pragma mark Implement private methods
+
+// Download image
+- (void)downloadImage:(NSNotification *)notification
+{
+    // Collect data from notification
+    UIImageView *imageViewNotifier = notification.userInfo[@"imageView"];
+    NSString *coverURL = notification.userInfo[@"coverUrl"];
+    
+    // TODO Load data from local
+    imageViewNotifier.image = [self.persistencyManager getImageWithName:[coverURL lastPathComponent] ];
+    
+    if (!imageViewNotifier.image) { //if no data from local
+        
+        // Download data
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            UIImage *image = [self.httpClient getImageByUrlString:coverURL];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                imageViewNotifier.image = image;
+                
+                // Save image to local
+                [self.persistencyManager saveImage:image withName:[coverURL lastPathComponent] ];
+            });
+        });
+    }
+    
+}
 
 @end
